@@ -4,6 +4,7 @@ describe('getShortMessages', function () {
   test('should return an array of all messages shorter than 10 character', function () {
 
     // Arrange
+
     const messages = [
         {
             text: 'Lorem ipsum dolor sit amet'

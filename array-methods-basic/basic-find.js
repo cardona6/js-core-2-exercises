@@ -8,14 +8,12 @@
 
 var WORD_TO_FIND = 'Lorem';
 
-var findMessages = function(messages) {
-    var result = [];
-    for(var i = 0; i < messages.length; i++){
-        var message = messages[i];
-        if(message.text.match(WORD_TO_FIND)){
-            return message
-        }
-    }
-};
+function findMessages(messages) {
+  return messages.find(findtext => {
+    console.log(findtext);
+    return findtext.text.match(WORD_TO_FIND)
+  });
+      
+}
 
 module.exports = findMessages;
